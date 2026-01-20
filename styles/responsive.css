@@ -121,7 +121,7 @@
         display: none;
     }
     
-    .menu-toggle {
+    #navbar .menu-toggle {
         display: block !important;
         position: relative;
         cursor: pointer;
@@ -129,7 +129,7 @@
         padding: 0.5rem;
     }
     
-    .menu-toggle i {
+    #navbar .menu-toggle i {
         font-size: 2.8rem;
         color: #FFFFFF;
         cursor: pointer;
@@ -137,7 +137,7 @@
         display: block;
     }
     
-    .menu-toggle i:hover {
+    #navbar .menu-toggle i:hover {
         color: #F7E93F;
         transform: scale(1.1);
     }
