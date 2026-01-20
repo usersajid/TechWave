@@ -80,11 +80,12 @@
     #navbar .wrapper {
         position: relative;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
         padding: 1rem 0;
     }
+    
     #nav-menu {
         position: fixed;
         left: -100%;
@@ -121,14 +122,11 @@
     }
     
     .menu-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block !important;
         position: relative;
         cursor: pointer;
         z-index: 1001;
         padding: 0.5rem;
-        margin-left: auto;
     }
     
     .menu-toggle i {
@@ -136,6 +134,7 @@
         color: #FFFFFF;
         cursor: pointer;
         transition: all 0.3s ease;
+        display: block;
     }
     
     .menu-toggle i:hover {
