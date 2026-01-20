@@ -251,7 +251,7 @@ td{
 .why-area-card{
     background-color: #1a0b2e;
     padding: 30px 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -270,7 +270,7 @@ td{
 }
 .why-area-card p{
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .why-area-card img{
     margin-bottom: 15px;
@@ -285,3 +285,37 @@ td{
     grid-row: span 1;  
 }
 /* Why-area CSS styles end */
+/* Episode-area CSS styles start */
+#episode-area{
+    padding: 80px 0;
+    background-color: #1a0b2e;
+    border-bottom: 1px solid #333;
+}
+.episode-content{
+    margin: 0 auto;
+    text-align: center;
+}
+.episode-boxs{
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+.episode-box{
+    background-color: #230e3d;
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+.episode-box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.episode-box iframe{
+    margin-bottom: 15px;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+/* Episode-area CSS styles end */
