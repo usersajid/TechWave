@@ -1,4 +1,8 @@
 /* Important CSS styles start */
+html {
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+}
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
     margin: 0;
@@ -7,6 +11,7 @@
 }
 body{
     font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
     background-color: #f5f5f5;
     color: #333;
 }
@@ -15,19 +20,19 @@ body{
 /* Common CSS styles start */
 .container{
     width: 90%;
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem;
 }
 .wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 1rem 0;
 }
 .logo a{
     color: #FFFFFF;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: bold;
     text-decoration: none;
 }
@@ -39,12 +44,12 @@ body{
 .btn{
     border: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     background: linear-gradient(55deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
     color: #FFFFFF;
     text-decoration: none;
-    border-radius: 30px;
-    font-size: 16px;
+    border-radius: 3rem;
+    font-size: 1.6rem;
     cursor: pointer;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -80,23 +85,23 @@ svg:hover {
   color: #F7E93F; 
 }
 h1{
-    font-size: 60px;
-    margin: 20px 0;
+    font-size: 6rem;
+    margin: 2rem 0;
 }
 p{
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.6;
-    margin: 20px 0;
+    margin: 2rem 0;
     color: #FFFFFF;
 }
 h2{
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
     color: #FFFFFF;
 }
 h3{
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
     color: #FFFFFF;
 }
 /* Common CSS styles end */
@@ -104,18 +109,18 @@ h3{
 /* Navbar CSS styles start */
 #navbar{
     background-color: #1A0B2E;
-    padding: 15px 0;
+    padding: 1.5rem 0;
     border-bottom: 1px solid #333;
 }
 #nav-menu{
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 3rem;
 }
 li a{
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.6rem;
     transition: color 0.3s ease;
 }
 li a:hover{
@@ -123,7 +128,7 @@ li a:hover{
 }
 .menu-toggle{
     display: none;
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -138,13 +143,13 @@ li a:hover{
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-    padding: 100px 0;
+    padding: 10rem 0;
     border-bottom: 1px solid #333;
 }
 .hero-img-container {
     position: relative;
-    width: 480px; 
-    height: 450px;
+    width: 48rem; 
+    height: 45rem;
     display: inline-block;
 }
 
@@ -159,7 +164,7 @@ li a:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    width: 170px; 
+    width: 17rem; 
     z-index: 2;
 }
 
@@ -169,17 +174,17 @@ li a:hover{
     right: 15%; 
     background-color: #00FF88; 
     color: #000000;           
-    padding: 6px 14px;         
-    border-radius: 20px;       
+    padding: 0.6rem 1.4rem;         
+    border-radius: 2rem;       
     font-weight: 700;          
-    font-size: 14px;
+    font-size: 1.4rem;
     z-index: 3;                
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
 } 
 .hero-buttons{
-    margin-top: 20px;
+    margin-top: 2rem;
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
     justify-content: center;
 }
 .btn-spotify, .btn-subscribe{
@@ -192,88 +197,88 @@ li a:hover{
     color: #00FF88;
 }
 a span{
-    margin-left: 5px;
+    margin-left: 0.5rem;
 }
 /* Hero-area CSS styles end */
 
 /* About-area CSS styles start */
 #about-area{
-    padding: 80px 0;
+    padding: 8rem 0;
     background-color: #1a0b2e;
     border-bottom: 1px solid #333;
 }
 .about-content{
-    max-width: 800px;
+    max-width: 80rem;
     margin: 0 auto;
     text-align: center;
 }
 .rating-area{
-    margin-top: 40px;
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding: 50px 0;
+    gap: 4rem;
+    padding: 5rem 0;
     border-top: 1px solid #333;
 }
 table{
     width: 70%;
     border-collapse: collapse;
-    margin: 0 20px;
+    margin: 0 2rem;
     text-align: center;
 }
 th{
     color: #00FF88;
-    font-size: 48px;
-    padding: 20px 0;
+    font-size: 4.8rem;
+    padding: 2rem 0;
 }
 td{
     color: #FFFFFF;
-    font-size: 16px;
-    padding: 15px 0;
+    font-size: 1.6rem;
+    padding: 1.5rem 0;
 }
 /* About-area CSS styles end */
 
 /* Why-area CSS styles start */
 #why-area{
-    padding: 80px 0;
+    padding: 8rem 0;
     background-color: #230e3d;
     text-align: center;
 }
 .why-area-cards{
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 2rem 0;
     display: grid;
-    grid-template-rows: repeat(3, 200px);
-    grid-template-columns: repeat(3, 290px);
-    gap: 20px;
+    grid-template-rows: repeat(3, 20rem);
+    grid-template-columns: repeat(3, 29rem);
+    gap: 2rem;
     justify-content: center;
 }
 .why-area-card{
     background-color: #1a0b2e;
-    padding: 30px 30px;
-    border-radius: 20px;
+    padding: 3rem 3rem;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: start;
     text-align: start;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .why-area-card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1rem);
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.3);
 }
 .why-area-card h3{
-    font-size: 20px;
-    margin-bottom: 1px;
+    font-size: 2rem;
+    margin-bottom: 0.1rem;
 }
 .why-area-card p{
-    font-size: 14px;
-    margin-top: 5px;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
 }
 .why-area-card img{
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 .big-row-card{
     grid-row: span 2;
@@ -287,7 +292,7 @@ td{
 /* Why-area CSS styles end */
 /* Episode-area CSS styles start */
 #episode-area{
-    padding: 80px 0;
+    padding: 8rem 0;
     background-color: #1a0b2e;
     border-bottom: 1px solid #333;
 }
@@ -297,65 +302,65 @@ td{
 }
 .episode-boxs{
     display: flex;
-    gap: 40px;
-    margin-top: 30px;
+    gap: 4rem;
+    margin-top: 3rem;
 }
 .episode-box{
     background-color: #230e3d;
     padding: 0;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
 }
 .episode-box:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1rem);
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.3);
 }
 .episode-box iframe{
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     width: 100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
 }
 /* Episode-area CSS styles end */
 
 /* Host-area CSS styles start */
 #host-area{
-    padding: 80px 0;
+    padding: 8rem 0;
     text-align: center;
 }
 .host-content h2{
-   font-size: 48px;
+   font-size: 4.8rem;
    font-weight: 700;
 }
 .host-info{
-    max-width: 900px;
+    max-width: 90rem;
     margin: 0 auto;
-    border-radius: 30px;
+    border-radius: 3rem;
     background-color: #250d44;
     display: flex;
     justify-content: center;
     text-align: start;
-    gap: 30px;
-    padding: 20px;
+    gap: 3rem;
+    padding: 2rem;
 }
 .host-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 150px;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 15rem;
 }
 .host-link{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; 
+    gap: 2rem;
 }
 .host-link img{
     border: 1px solid #FFFFFF;
     border-radius: 50%;
-    margin: 4px;
-    padding: 4px;
+    margin: 0.4rem;
+    padding: 0.4rem;
 }
 /* Host-area CSS styles end */
 /* Footer-area CSS styles start */
@@ -364,19 +369,19 @@ td{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 30px 0;
+    padding: 3rem 0;
     text-align: center;
     border-top: 1px solid #333;
     color: #FFFFFF;
 }
 .logo a{
-    font-size: 48px;
+    font-size: 4.8rem;
 }
 .footer-content, .footer-logo{
-    margin: 20px 20px;
+    margin: 2rem 2rem;
 }
 .footer-content img{
-    margin: 0 15px;
+    margin: 0 1.5rem;
     vertical-align: middle;
 }
 /* Footer-area CSS styles end */
