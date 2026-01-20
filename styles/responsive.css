@@ -1,0 +1,409 @@
+/* ==========================================
+   SMALL DEVICE: up to 576px
+   ========================================== */
+@media screen and (max-width: 576px) {
+    html, body {
+        overflow-x: hidden !important; 
+        width: 100%;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%; 
+        padding: 0 2rem; 
+        overflow-x: hidden; 
+        box-sizing: border-box;
+    }
+    iframe {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 1rem 0;
+        box-sizing: border-box;
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: 3.2rem;
+        word-wrap: break-word;
+        line-height: 1.2;
+        margin: 1.5rem 0;
+    }
+    h2 {
+        font-size: 2.2rem;
+        word-wrap: break-word;
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.7rem;
+        word-wrap: break-word;
+        line-height: 1.4;
+    }
+    
+    p {
+        font-size: 1.4rem;
+        word-wrap: break-word;
+        line-height: 1.6;
+        margin: 1rem 0;
+    }
+    
+    .logo a {
+        font-size: 2.6rem;
+    }
+    
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        max-width: 100%;
+    }
+    
+    /* ===== NAVBAR ===== */
+    #nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 7rem;
+        flex-direction: column;
+        background-color: #1A0B2E;
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 1000;
+        padding: 2rem 0;
+        gap: 0;
+    }
+    
+    #nav-menu.active {
+        left: 0;
+    }
+    
+    #nav-menu li {
+        padding: 1.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    #nav-menu li a {
+        font-size: 1.6rem;
+        display: block;
+    }
+    
+    .nav-btn {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .menu-toggle i {
+        font-size: 2.5rem;
+        color: #FFFFFF;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    /* ===== HERO AREA ===== */
+    #hero-area {
+        padding: 3rem 0 4rem 0;
+    }
+    
+    .hero-img-container {
+        width: 25rem;
+        height: 25rem;
+        margin: 0 auto;
+    }
+    
+    .microphone {
+        width: 9rem;
+    }
+    
+    .new-badge {
+        font-size: 1.1rem;
+        padding: 0.4rem 1rem;
+        top: 10%;
+        right: 10%;
+    }
+    
+    .hero-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1rem;
+        padding: 0 1rem;
+        justify-content: center;
+    }
+    
+    .btn-spotify,
+    .btn-subscribe {
+        flex: 1;
+        min-width: 45%;
+        max-width: 48%;
+        justify-content: center;
+        font-size: 1.3rem;
+        padding: 1.1rem 1.5rem;
+        gap: 0.6rem;
+    }
+    
+    .btn-spotify svg,
+    .btn-subscribe svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    /* ===== ABOUT AREA ===== */
+    #about-area {
+        padding: 3rem 0;
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    
+    .about-content {
+        max-width: 100%;
+        padding: 0 0.5rem;
+        overflow-x: hidden;
+    }
+    
+    .about-content h2 {
+        margin-bottom: 1rem;
+    }
+    
+    .about-content p {
+        font-size: 1.35rem;
+        line-height: 1.65;
+    }
+    
+    .rating-area {
+        margin-top: 2.5rem;
+        padding: 2.5rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .rating-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 2rem;
+    }
+    
+    .rating-item {
+        text-align: center;
+    }
+    
+    .rating-item h3 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #00FF88;
+        margin: 0 0 0.8rem 0;
+    }
+    
+    .rating-item p {
+        font-size: 1.15rem;
+        line-height: 1.3;
+        color: #FFFFFF;
+        margin: 0;
+    }
+    
+    /* ===== WHY AREA ===== */
+    #why-area {
+        padding: 3rem 0;
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    
+    .why-area-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1.5rem;
+        padding: 1.5rem 0;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .why-area-card {
+        padding: 2.5rem 2rem;
+        grid-row: span 1 !important;
+        grid-column: span 1 !important;
+        border-radius: 1.5rem;
+    }
+    
+    .why-area-card h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .why-area-card p {
+        font-size: 1.35rem;
+        line-height: 1.6;
+        margin-top: 0.5rem;
+    }
+    
+    .why-area-card img {
+        width: 4.5rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    /* ===== EPISODE AREA ===== */
+    #episode-area {
+        padding: 3rem 0;
+        overflow-x: hidden;
+    }
+    
+    .episode-boxs {
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+    
+    .episode-box {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        border-radius: 1.2rem;
+    }
+    
+    .episode-box iframe {
+        height: 200px;
+        width: 100%;
+        max-width: 100%;
+        border-top-left-radius: 1.2rem;
+        border-top-right-radius: 1.2rem;
+    }
+    
+    .episode-box h3 {
+        font-size: 1.65rem;
+        padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+        word-wrap: break-word;
+        line-height: 1.4;
+    }
+    
+    .episode-box p {
+        font-size: 1.3rem;
+        padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+        margin: 0;
+        word-wrap: break-word;
+        line-height: 1.6;
+    }
+    
+    /* ===== HOST AREA ===== */
+    #host-area {
+        padding: 3rem 0;
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    
+    .host-content {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .host-content h2 {
+        font-size: 2.6rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .host-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2.5rem 1.5rem;
+        gap: 1.5rem;
+        border-radius: 2rem;
+    }
+    
+    .host-img {
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto;
+    }
+    
+    .about-host {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .about-host h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .about-host p {
+        font-size: 1.35rem;
+        line-height: 1.7;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .host-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+        margin-top: 1rem;
+    }
+    
+    .host-link img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    /* ===== FOOTER ===== */
+    #footer-area {
+        padding: 2rem 0;
+        overflow-x: hidden;
+    }
+    
+    .footer-logo {
+        margin-bottom: 2rem;
+    }
+    
+    .footer-logo a {
+        font-size: 3rem;
+    }
+    
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 1.5rem;
+        margin: 2rem 0;
+        max-width: 100%;
+        align-items: center;
+    }
+    
+    .footer-content > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    .footer-content img {
+        width: 2.5rem;
+        height: 2.5rem;
+        flex-shrink: 0;
+    }
+    
+    .footer-content span {
+        font-size: 1.3rem;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+}
+

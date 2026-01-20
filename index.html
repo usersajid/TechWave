@@ -26,14 +26,14 @@
           <li><a href="#episode-area">Episode</a></li>
           <li><a href="#host">Host</a></li>
         </ul>
-        <div class="menu-toggle">
-          <i class="fas fa-bars"></i>
-        </div>
-        <button class="btn">
+        <button class="btn nav-btn">
           Subscribe <i class="fa-solid fa-arrow-right"></i>
         </button>
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
     </nav>
-    </div>
     <div id="hero-area">
       <div class="container">
         <div class="hero-content">
@@ -86,20 +86,24 @@
         </p>
       </div>
       <div class="rating-area">
-        <table>
-          <tr>
-            <th>150K+</th>
-            <th>200+</th>
-            <th>4.9★</th>
-            <th>50+</th>
-          </tr>
-          <tr>
-            <td>Monthly Listeners</td>
-            <td>Episodes Published</td>
-            <td>Average Rating</td>
-            <td>Countries Reached</td>
-          </tr>
-        </table>
+        <div class="rating-grid">
+          <div class="rating-item">
+            <h3>150K+</h3>
+            <p>Monthly Listeners</p>
+          </div>
+          <div class="rating-item">
+            <h3>200+</h3>
+            <p>Episodes Published</p>
+          </div>
+          <div class="rating-item">
+            <h3>4.9★</h3>
+            <p>Average Rating</p>
+          </div>
+          <div class="rating-item">
+            <h3>50+</h3>
+            <p>Countries Reached</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -211,18 +215,59 @@
   </section>
   <footer id="footer-area">
     <div class="container">
+      <div class="logo footer-logo">
+        <a href="#header">Tech<span class="wave-text">Wave</span></a>
+      </div>
       <div class="footer-content">
-        <div class="logo footer-logo">
-          <a href="#header">Tech<span class="wave-text">Wave</span></a>
+        <div>
+          <img src="./assets/spotify.png" alt="Spotify Logo" />
+          <span>Spotify</span>
         </div>
-        <img src="./assets/spotify.png" alt="Spotify Logo" /><span>Spotify</span>
-        <img src="./assets/apple-podcast.png" alt="Apple Podcast Logo" /><span>Apple Podcast</span>
-        <img src="./assets/youtube-podcast.png" alt="YouTube Logo" /><span>YouTube</span>
-        <img src="./assets/twitter.png" alt="Twitter Logo" /><span>Twitter</span>
+        <div>
+          <img src="./assets/apple-podcast.png" alt="Apple Podcast Logo" />
+          <span>Apple Podcast</span>
+        </div>
+        <div>
+          <img src="./assets/youtube-podcast.png" alt="YouTube Logo" />
+          <span>YouTube</span>
+        </div>
+        <div>
+          <img src="./assets/twitter.png" alt="Twitter Logo" />
+          <span>Twitter</span>
+        </div>
       </div>
       <p>&copy; 2026 TechWave. All rights reserved.</p>
     </div>
   </footer>
+  
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      const icon = menuToggle.querySelector('i');
+      if (navMenu.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+    
+    // Close menu when clicking on a link
+    const navLinks = document.querySelectorAll('#nav-menu a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      });
+    });
+  </script>
 </body>
 
 </html>
