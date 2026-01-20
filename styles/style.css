@@ -358,3 +358,25 @@ td{
     padding: 4px;
 }
 /* Host-area CSS styles end */
+/* Footer-area CSS styles start */
+#footer-area{
+    background-image:url('../assets/footer-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+    color: #FFFFFF;
+}
+.logo a{
+    font-size: 48px;
+}
+.footer-content, .footer-logo{
+    margin: 20px 20px;
+}
+.footer-content img{
+    margin: 0 15px;
+    vertical-align: middle;
+}
+/* Footer-area CSS styles end */
