@@ -47,10 +47,12 @@ body{
     font-size: 16px;
     cursor: pointer;
     font-weight: 600;
+    transition: all 0.3s ease;
 }
 .btn:hover{
     opacity: 0.9;
     color: #F7E93F;
+    box-shadow: 20px 20px 0px rgba(7, 7, 7, 0.3);
 }
 @keyframes rotateIcon {
   0% {
@@ -85,10 +87,17 @@ p{
     font-size: 18px;
     line-height: 1.6;
     margin: 20px 0;
+    color: #FFFFFF;
 }
 h2{
     font-size: 32px;
     margin-bottom: 20px;
+    color: #FFFFFF;
+}
+h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
 }
 /* Common CSS styles end */
 
@@ -96,6 +105,7 @@ h2{
 #navbar{
     background-color: #1A0B2E;
     padding: 15px 0;
+    border-bottom: 1px solid #333;
 }
 #nav-menu{
     list-style: none;
@@ -120,7 +130,7 @@ li a:hover{
 /* Navbar CSS styles end */
 
 /* Hero-area CSS styles start */
- #hero-area{
+#hero-area{
     background: url('../assets/hero-bg.png') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
@@ -128,10 +138,12 @@ li a:hover{
     align-items: center;
     text-align: center;
     color: #FFFFFF;
- }
+    padding: 100px 0;
+    border-bottom: 1px solid #333;
+}
 .hero-img-container {
     position: relative;
-    width: 450px; 
+    width: 480px; 
     height: 450px;
     display: inline-block;
 }
@@ -155,10 +167,8 @@ li a:hover{
     position: absolute;
     top: 15%;  
     right: 15%; 
-    
     background-color: #00FF88; 
     color: #000000;           
-    
     padding: 6px 14px;         
     border-radius: 20px;       
     font-weight: 700;          
@@ -184,3 +194,41 @@ li a:hover{
 a span{
     margin-left: 5px;
 }
+/* Hero-area CSS styles end */
+
+/* About-area CSS styles start */
+#about-area{
+    padding: 80px 0;
+    background-color: #1a0b2e;
+    border-bottom: 1px solid #333;
+}
+.about-content{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.rating-area{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 0;
+    border-top: 1px solid #333;
+}
+table{
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 20px;
+    text-align: center;
+}
+th{
+    color: #00FF88;
+    font-size: 48px;
+    padding: 20px 0;
+}
+td{
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 15px 0;
+}
+/* About-area CSS styles end */
