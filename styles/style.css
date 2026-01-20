@@ -319,3 +319,42 @@ td{
     border-top-right-radius: 25px;
 }
 /* Episode-area CSS styles end */
+
+/* Host-area CSS styles start */
+#host-area{
+    padding: 80px 0;
+    text-align: center;
+}
+.host-content h2{
+   font-size: 48px;
+   font-weight: 700;
+}
+.host-info{
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: #250d44;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    gap: 30px;
+    padding: 20px;
+}
+.host-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+}
+.host-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+.host-link img{
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    margin: 4px;
+    padding: 4px;
+}
+/* Host-area CSS styles end */
